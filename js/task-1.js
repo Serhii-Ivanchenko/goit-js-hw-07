@@ -3,6 +3,7 @@ const categoryEl = document.querySelectorAll('.item');
 const categoriesTitlesEl = document.querySelectorAll('.item h2');
 const categoryListEl = document.querySelectorAll('.item ul');
 
+// !Complicated variant with function
 // function calcCategories(element) {
 //   return `Number of categories: ${element.children.length}`;
 // }
@@ -17,6 +18,7 @@ const categoryListEl = document.querySelectorAll('.item ul');
 
 // getCategoryInfo(categoriesTitlesEl);
 
+// !Easy variant
 console.log(categoryEl.length);
 categoryEl.forEach(element => {
   console.log(`Category: ${element.firstElementChild.textContent}`);

@@ -27,6 +27,7 @@ const images = [
 
 const galleryEl = document.querySelector('.gallery');
 
+// !More complicated variant
 // const galleryItem = images.map(({ url, alt }) => {
 //   const itemEl = document.createElement('li');
 //   const imgEl = document.createElement('img');
@@ -39,6 +40,7 @@ const galleryEl = document.querySelector('.gallery');
 
 // galleryEl.append(...galleryItem);
 
+// !Easier variant with innerHTML
 function createGalleryMarkup(arr) {
   return arr
     .map(
