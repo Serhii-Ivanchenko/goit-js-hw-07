@@ -11,10 +11,10 @@ function onFormSubmit(event) {
     password: elements.password.value.trim(),
   };
 
-  if (elements.email.value === '' || elements.password.value === '') {
+  if (info.email === '' || info.password === '') {
     alert('All form fields must be filled in');
   } else {
-      console.log(info);
-      event.target.reset();
+    console.log(info);
+    event.target.reset();
   }
 }
